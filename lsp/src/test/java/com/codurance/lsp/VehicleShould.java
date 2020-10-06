@@ -27,17 +27,23 @@ public class VehicleShould {
                 .isFalse();
     }
 
-    public class TestableVehicle extends Vehicle {
+    public static class TestableVehicle extends Vehicle {
 
         @Override
-        public void fillUpWithFuel() {
+        public void replenish() {
 
         }
 
-        @Override
-        public void chargeBattery() {
+//        @Override
+//        public void fillUpWithFuel() {
+//
+//        }
+//
+//        @Override
+//        public void chargeBattery() {
+//
+//        }
 
-        }
     }
 
 }

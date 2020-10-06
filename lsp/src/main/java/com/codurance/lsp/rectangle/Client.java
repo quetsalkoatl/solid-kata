@@ -11,7 +11,8 @@ public class Client {
     }
 
     public static void main(String[] args) {
-        Rectangle rect = new Square();
+//        Rectangle rect = new Rectangle(); // assertion succeeds
+        Rectangle rect = new Square(); // assertion fails
         clientMethod(rect);
     }
 }

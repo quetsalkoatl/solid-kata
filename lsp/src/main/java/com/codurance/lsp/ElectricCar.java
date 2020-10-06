@@ -6,16 +6,22 @@ public class ElectricCar extends Vehicle{
     private int batteryLevel;
 
     @Override
-    public void fillUpWithFuel() {
-        throw new UnsupportedOperationException("It's an electric car");
-    }
-
-    @Override
-    public void chargeBattery() {
+    public void replenish() {
         batteryLevel = BATTERY_FULL;
     }
 
     public int batteryLevel() {
         return batteryLevel;
     }
+
+    //    @Override
+//    public void fillUpWithFuel() {
+//        throw new UnsupportedOperationException("It's an electric car");
+//    }
+//
+//    @Override
+//    public void chargeBattery() {
+//        batteryLevel = BATTERY_FULL;
+//    }
+
 }

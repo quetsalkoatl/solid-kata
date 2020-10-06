@@ -2,15 +2,21 @@ package com.codurance.lsp;
 
 public class FillingStation {
 
+    public void replenish(Vehicle vehicle) {
+        vehicle.replenish();
+    }
+
     public void refuel(Vehicle vehicle) {
-        if (vehicle instanceof PetrolCar) {
-            vehicle.fillUpWithFuel();
-        }
+        replenish(vehicle);
+//        if (vehicle instanceof PetrolCar) {
+//            vehicle.fillUpWithFuel();
+//        }
     }
 
     public void charge(Vehicle vehicle) {
-        if (vehicle instanceof ElectricCar) {
-            vehicle.chargeBattery();
-        }
+        replenish(vehicle);
+//        if (vehicle instanceof ElectricCar) {
+//            vehicle.chargeBattery();
+//        }
     }
 }
