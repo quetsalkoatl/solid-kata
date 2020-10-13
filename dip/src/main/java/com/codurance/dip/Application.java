@@ -3,7 +3,8 @@ package com.codurance.dip;
 public class Application {
 
     public static void main(String[] args) {
-        RandomQuoteService randQ = new RandomQuoteService();
+        QuoteList quoteList = new FileQuoteList();
+        RandomQuoteService randQ = new RandomQuoteService(quoteList);
         System.out.println(randQ.getRandomQuote());
     }
 }

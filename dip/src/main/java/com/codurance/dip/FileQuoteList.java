@@ -9,7 +9,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class FileQuoteList {
+public class FileQuoteList implements QuoteList {
 
     final String fileName = "/files/quote.txt";
     final File file = getFileFromResource(fileName);

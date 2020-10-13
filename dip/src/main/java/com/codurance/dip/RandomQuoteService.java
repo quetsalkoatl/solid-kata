@@ -5,12 +5,16 @@ import java.util.Random;
 
 public class RandomQuoteService {
 
-    private final FileQuoteList quote = new FileQuoteList();
+    private final QuoteList quoteList;
+
+    public RandomQuoteService(QuoteList quoteList) {
+        this.quoteList = quoteList;
+    }
 
     public String getRandomQuote() {
-        List<String> quoteList = quote.getQuoteList();
+        List<String> quotes = quoteList.getQuoteList();
         Random random = new Random();
-        int index = random.nextInt(quoteList.size());
-        return quoteList.get(index);
+        int index = random.nextInt(quotes.size());
+        return quotes.get(index);
     }
 }
